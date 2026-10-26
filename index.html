@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nuestra pequeña historia · Cami</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= FONDO DE PARTÍCULAS ================= -->
+<canvas id="petals-canvas"></canvas>
+<div class="grain-overlay"></div>
+
+<!-- ================= NAV DE PROGRESO ================= -->
+<nav class="dot-nav" aria-label="Navegación de secciones">
+  <a href="#hero" class="dot active" data-label="Inicio"></a>
+  <a href="#contador" class="dot" data-label="Nuestro tiempo"></a>
+  <a href="#timeline" class="dot" data-label="Momentos"></a>
+  <a href="#galeria" class="dot" data-label="Galería"></a>
+  <a href="#razones" class="dot" data-label="Razones"></a>
+  <a href="#musica" class="dot" data-label="Nuestra canción"></a>
+</nav>
+
+<!-- ================= 1. HERO ================= -->
+<section id="hero" class="section hero">
+  <div class="hero-frame">
+    <span class="eyebrow reveal-fade">para Cami</span>
+
+    <div class="hero-photo reveal-scale no-photo">
+      <div class="hero-photo__ring"></div>
+      <div class="hero-photo__placeholder">
+        <span>✦</span>
+        <p>nuestra<br>historia</p>
+      </div>
+    </div>
+
+    <h1 class="hero-title reveal-fade">Nuestra pequeña<br><em>historia</em></h1>
+    <p class="hero-sub reveal-fade">Camila · mi cielo, mi calma, mi hogar,<br class="mobile-break"> mi persona favorita en el mundo</p>
+
+    <a href="#contador" class="scroll-cue reveal-fade" aria-label="Bajar">
+      <span class="scroll-cue__line"></span>
+      <span>descubre lo nuestro</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= 2. CONTADOR ================= -->
+<section id="contador" class="section counter-section">
+  <span class="eyebrow reveal-fade">desde el 18 de junio de 2022</span>
+  <h2 class="section-title reveal-fade">Todo lo que llevamos<br><em>juntos</em></h2>
+
+  <div class="counter-grid reveal-fade">
+    <div class="counter-card">
+      <span class="counter-num" data-target="0" id="cnt-years">0</span>
+      <span class="counter-label">años</span>
+    </div>
+    <div class="counter-card">
+      <span class="counter-num" data-target="0" id="cnt-months">0</span>
+      <span class="counter-label">meses</span>
+    </div>
+    <div class="counter-card">
+      <span class="counter-num" data-target="0" id="cnt-days">0</span>
+      <span class="counter-label">días</span>
+    </div>
+    <div class="counter-card">
+      <span class="counter-num" data-target="0" id="cnt-hours">0</span>
+      <span class="counter-label">horas</span>
+    </div>
+  </div>
+
+  <p class="counter-footnote reveal-fade">y cada segundo, sin excepción, elegiría volver a empezar contigo, mi cielo.</p>
+</section>
+
+<!-- ================= 3. TIMELINE ================= -->
+<section id="timeline" class="section timeline-section">
+  <span class="eyebrow reveal-fade">nuestros momentos</span>
+  <h2 class="section-title reveal-fade">Una línea de <em>tiempo</em></h2>
+
+  <div class="timeline">
+    <div class="timeline__line"></div>
+
+    <div class="timeline__item reveal-side">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">18 de junio, 2022</span>
+        <h3>Cuando nos conocimos</h3>
+        <p>Una tarde de lluvia en una librería del centro, los dos buscando el mismo libro de poemas. Tú lo tomaste primero; yo me quedé con la excusa perfecta para hablarte.</p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal-side">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">2 de julio, 2022</span>
+        <h3>La primera vez que te invité a salir</h3>
+        <p>Café de olla y pan dulce en una cafetería pequeña de la plaza. Hablamos tanto que cerraron el lugar y seguimos caminando hasta que salió la luna.</p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal-side">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">14 de octubre, 2022</span>
+        <h3>La primera vez que viajamos juntos</h3>
+        <p>Un fin de semana en un pueblo junto al lago: neblina por la mañana, sopa caliente y la primera vez que dijimos «te quiero» en voz alta.</p>
+      </div>
+    </div>
+
+    <div class="timeline__item reveal-side">
+      <div class="timeline__dot"></div>
+      <div class="timeline__card">
+        <span class="timeline__date">Hoy</span>
+        <h3>Y seguimos escribiendo esta historia</h3>
+        <p>Contigo, cada capítulo nuevo es mi favorito, mi cielo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. GALERÍA ================= -->
+<section id="galeria" class="section gallery-section">
+  <span class="eyebrow reveal-fade">momentos nuestros</span>
+  <h2 class="section-title reveal-fade">Pequeña <em>galería</em></h2>
+
+  <div class="gallery-grid">
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">18 jun 2022</span>
+        <p>La librería donde todo empezó</p>
+      </div>
+    </figure>
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">2 jul 2022</span>
+        <p>Café, pan dulce y horas sin reloj</p>
+      </div>
+    </figure>
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">14 oct 2022</span>
+        <p>Neblina sobre el lago</p>
+      </div>
+    </figure>
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">25 dic 2022</span>
+        <p>Nuestra primera Navidad juntos</p>
+      </div>
+    </figure>
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">11 feb 2023</span>
+        <p>Un picnic improvisado en el cerro</p>
+      </div>
+    </figure>
+    <figure class="gallery-item reveal-fade no-photo">
+      <div class="gallery-item__overlay">
+        <span class="gallery-item__date">9 sep 2023</span>
+        <p>El atardecer que no queríamos que terminara</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 5. RAZONES ================= -->
+<section id="razones" class="section reasons-section">
+  <span class="eyebrow reveal-fade">un motivo a la vez</span>
+  <h2 class="section-title reveal-fade">Razones por las<br><em>que te amo</em></h2>
+
+  <div class="reasons-box reveal-fade">
+    <div class="reasons-card" id="reasons-card">
+      <span class="reasons-quote-mark">“</span>
+      <p id="reasons-text">Presiona el botón y descubre una razón, mi cielo.</p>
+    </div>
+
+    <button id="reasons-btn" class="btn-elegant">
+      <span>Razones por las que te amo</span>
+    </button>
+
+    <p class="reasons-hint">— presiona tantas veces como quieras —</p>
+  </div>
+</section>
+
+<!-- ================= 6. MÚSICA (footer) ================= -->
+<section id="musica" class="section music-section">
+  <span class="eyebrow reveal-fade">para cerrar</span>
+  <h2 class="section-title reveal-fade">Nuestra <em>canción</em></h2>
+  <p class="music-copy reveal-fade">Activa el reproductor en la esquina y deja que suene mientras me lees, mi cielo.</p>
+  <p class="signature reveal-fade">Con todo mi corazón, hoy y siempre.</p>
+</section>
+
+<!-- Reproductor flotante -->
+<div class="music-player">
+  <audio id="bg-audio" loop preload="none">
+    <!-- Reemplaza este archivo por tu canción favorita (mismo nombre) -->
+    <source src="assets/Lord_Huro_-_The_Night_We_Met_(mp3.pm).mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-toggle" aria-label="Reproducir música">
+    <span class="music-toggle__icon">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </span>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
